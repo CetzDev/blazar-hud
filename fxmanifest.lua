@@ -2,8 +2,8 @@ fx_version 'cerulean'
 
 game 'gta5'
 lua54 'yes'
-author 'Farfadox#5441'
-description 'Recreable One'
+author 'CetzzzDev.'
+description 'Redesign recreaone blazar hud'
 
 --Client Scripts-- 
 client_scripts {
