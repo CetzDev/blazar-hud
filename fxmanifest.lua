@@ -4,8 +4,8 @@ game 'gta5'
 lua54 'yes'
 author 'CetzzzDev.'
 description 'Redesign recreaone blazar hud'
+version '1.0.0'
 
---Client Scripts-- 
 client_scripts {
     'Client/*.lua'
 }
@@ -16,12 +16,10 @@ shared_scripts {
     'Shared.lua'
 }
 
---UI Part-- 
 ui_page {
     'html/index.html', 
 }
 
---File Part-- 
 files {
     'html/index.html',
     'html/app.js', 
