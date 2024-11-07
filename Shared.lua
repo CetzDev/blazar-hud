@@ -1,3 +1,4 @@
+/* V1.1.0 */
 Config = {}
 
 Config.StatusUpdateInterval = 5000
