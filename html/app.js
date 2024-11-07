@@ -1,3 +1,4 @@
+/* V1.1.0 */
 /* HUD */
 window.addEventListener("message", function(event) {
     var v = event.data
@@ -62,10 +63,16 @@ window.addEventListener("message", function(event) {
 
 
         case 'UpdateMoney': 
-                $('.moneyjs').html(`${formatodinero.format(v.money)}`)
-                $('.bankjs').html(`${formatodinero.format(v.bank)}`)
-                
-        break;
+        if (v.money > 0) {
+            $('.efectivo').show();
+            $('.moneyjs').html(`${formatodinero.format(v.money)}`);
+        } else {
+            $('.efectivo').hide();
+        }
+    
+        $('.bankjs').html(`${formatodinero.format(v.bank)}`);
+    break;
+    
 
 
         case 'UpdateJob':
